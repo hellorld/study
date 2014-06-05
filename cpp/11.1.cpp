@@ -34,6 +34,7 @@ struct Y
     friend ostream& operator<<(ostream& out, const Y& y)
     {
         out << y.i << endl;
+        return out;
     }
 
     operator int()
