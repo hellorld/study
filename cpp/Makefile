@@ -17,4 +17,4 @@ all: $(EXEC)
 	$(CC) -o $(@) -c $(<) $(CPPFLAG)
 
 clean:
-	rm -f $(EXEC) $(CPPOBJS)
+	rm -f $(EXEC)

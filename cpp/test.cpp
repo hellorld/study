@@ -6,8 +6,8 @@ class Point{
 public:
 
     //get info
-    double& getX() const{return x;};
-    double& getY() const{return y;};
+    double& getX() const {return (double&)x;};
+    double& getY() const {return (double&)y;};
 
     //overloading operators
     int operator<(const Point &pt) const;

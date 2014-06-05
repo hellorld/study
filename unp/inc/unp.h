@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <errno.h>
 #include <fcntl.h>
+#include <unistd.h>
 
 #if TIME_WITH_SYS_TIME
 #include <sys/time.h>
@@ -32,5 +33,8 @@
 #define SA struct sockaddr
 
 char* sock_ntop(const struct sockaddr*, socklen_t);
+ssize_t readn(int fileds, void* buf, size_t nbytes);
+ssize_t writen(int fileds, const void* buff, size_t nbytes);
+ssize_t readline(int fileds, void* buff, size_t maxlen);
 
 #endif
